@@ -1,0 +1,98 @@
+/ course-tracker-app/course-tracker-app/src/styles/components.css
+
+/* Component Styles */
+
+/* Card Styles */
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Metric Card Styles */
+.metric-card {
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.metric-value {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.metric-label {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Scrollable Card Styles */
+.scrollable-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    height: 500px;
+    overflow-y: auto;
+}
+
+/* Button Styles */
+.stButton button {
+    background: var(--primary-teal);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    background: var(--primary-teal-light);
+    transform: translateY(-1px);
+}
+
+/* Progress Bar Styles */
+.stProgress .st-bo {
+    background-color: var(--bg-panel);
+}
+
+.stProgress .st-bp {
+    background-color: var(--success-green);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        padding: 1rem;
+    }
+
+    .metric-card {
+        padding: 1rem;
+    }
+
+    .metric-value {
+        font-size: 24px;
+    }
+
+    .scrollable-card {
+        height: 300px;
+    }
+}

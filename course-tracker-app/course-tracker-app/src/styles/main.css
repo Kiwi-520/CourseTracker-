@@ -1,0 +1,91 @@
+/course-tracker-app/course-tracker-app/src/styles/main.css
+
+:root {
+    --primary-teal: #19778B;
+    --primary-teal-light: #3AA7BF;
+    --success-green: #2E8B57;
+    --warning-amber: #D99000;
+    --error-red: #B03060;
+    --text-heading: #1F2933;
+    --text-body: #3E4C59;
+    --text-muted: #6B7280;
+    --bg-page: #EAEDF1;
+    --bg-card: #FFFFFF;
+    --bg-panel: #F2F4F6;
+    --border: #D1D5DB;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-body);
+}
+
+h1, h2, h3 {
+    color: var(--text-heading);
+}
+
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.metric-card {
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.stButton button {
+    background: var(--primary-teal);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    background: var(--primary-teal-light);
+    transform: translateY(-1px);
+}
+
+.stProgress .st-bo {
+    background-color: var(--bg-panel);
+}
+
+.stProgress .st-bp {
+    background-color: var(--success-green);
+}
+
+@media (max-width: 768px) {
+    .main .block-container {
+        padding: 1rem;
+    }
+    
+    .metric-card {
+        padding: 1rem;
+    }
+    
+    .metric-value {
+        font-size: 24px;
+    }
+    
+    .scrollable-card {
+        height: 300px;
+    }
+}
